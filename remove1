@@ -4,7 +4,7 @@ using namespace std;
 
 void EraseLastSpace(string &str)
 {
-	if (str[str.length() - 1] == '-') // 마지막이 공백인동안
+	if (str[str.length() - 1] == '-') 
 	{
 		str.erase(str.length() - 1, 1);
 		cout << str << endl;

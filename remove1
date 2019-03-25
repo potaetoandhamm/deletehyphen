@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+void EraseLastSpace(string &str)
+{
+	if (str[str.length() - 1] == '-') // 마지막이 공백인동안
+	{
+		str.erase(str.length() - 1, 1);
+		cout << str << endl;
+	}
+	else cout << str << endl;
+}
+
+int main(void)
+{
+	freopen("input.txt", "r", stdin);
+	while (1)
+	{
+		string strLine;
+		getline(cin, strLine);
+		int N = strLine.size();
+		if (strLine == "END")
+			break;
+
+		EraseLastSpace(strLine);
+
+	}
+
+
+	return 0;
+}
